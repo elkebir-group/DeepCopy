@@ -594,7 +594,7 @@ def runPhasing(outLoc, refGenome, refLoc):
         # systemPrint(command6)
         commandList1.append(command6)
 
-        command7 = 'bcftools index ' + str(phasedFile)
+        command7 = 'bcftools index -c ' + str(phasedFile) # creates a csi index for bcf files
 
         # systemPrint(command7)
         commandList2.append(command7)
